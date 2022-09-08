@@ -1,0 +1,62 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  row-gap: 12px;
+
+  .newTopicPanel {
+    width: 40vw;
+    text-align: center;
+    padding-bottom: 80px;
+
+    button {
+      font-family: 'Playfair Display', serif;
+      margin: 12px;
+      padding: 6px 0;
+      border-radius: 5px;
+      text-transform: uppercase;
+      border: none;
+      background-color: #c5b9a3;
+      color: #1b1610;
+      transition: background-color 150ms ease-in-out;
+      cursor: pointer;
+      font-weight: bold;
+      width: 30%;
+  
+      &:hover {
+        background-color: #392f23;
+        color: #edecea;
+      }
+    }
+  }
+
+  #createTopicButton {
+    background-color: #766458;
+    color: #edecea;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #392f23;
+    }
+  }
+
+  .loginToReply {
+    text-transform: none;
+    text-align: center;
+
+    p {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: #766458;
+      transition: color 150ms ease-in-out;
+
+      &:hover {
+        color: #c5b9a3;
+      }
+    }
+  }
+}

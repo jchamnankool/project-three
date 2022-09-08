@@ -1,0 +1,35 @@
+.navBar {
+  background-color: #392f23;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  box-sizing: border-box;
+
+  a {
+    color: #edecea;
+    text-decoration: none;
+  }
+
+  .logo {
+    > a {
+      text-transform: uppercase;
+      font-size: 24px;
+    }
+  }
+
+  .items {
+    > a {
+      margin: 0 12px;
+      transition: border-bottom 150ms ease-in-out;
+      border-bottom: 1px solid #392f23;
+      text-transform: uppercase;
+
+      &:hover {
+        border-bottom: 1px solid #edecea;
+      }
+    }
+  }
+}

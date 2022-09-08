@@ -1,0 +1,35 @@
+a {
+  text-decoration: none;
+  color: #edecea;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: #766458;
+  width: 30vw;
+  padding: 12px;
+  border: 1px solid #392f23;
+  justify-content: space-between;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 150ms ease-in-out;
+
+  &:hover {
+    background-color: #392f23;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .num {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  .numTopics {
+    text-transform: uppercase;
+    font-size: 12px;
+  }
+}

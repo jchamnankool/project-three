@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+  row-gap: 12px;
+
+  button {
+    font-family: 'Playfair Display', serif;
+    margin: 12px;
+    padding: 6px 0;
+    border-radius: 5px;
+    text-transform: uppercase;
+    border: none;
+    background-color: #c5b9a3;
+    color: #1b1610;
+    transition: background-color 150ms ease-in-out;
+    cursor: pointer;
+    font-weight: bold;
+    width: 20%;
+
+    &:hover {
+      background-color: #392f23;
+      color: #edecea;
+    }
+  }
+
+  .controls {
+    text-align: left;
+    width: 50vw;
+
+    a {
+      transition: color 150ms ease-in-out;
+    }
+
+    a:hover {
+      color: #766458;
+    }
+  }
+
+  .replyPanel {
+    text-transform: uppercase;
+    padding: 0 18px;
+    width: 50vw;
+    padding-bottom: 120px;
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      label {
+        padding: 12px 0;
+      }
+
+      textarea {
+        font-family: 'Playfair Display', serif;
+        resize: none;
+        height: 100px;
+        padding: 12px;
+        border-radius: 5px;
+      }
+
+      .control {
+        text-align: center;
+      }
+    }
+
+    .loginToReply {
+      text-transform: none;
+      text-align: center;
+
+      p {
+        margin-bottom: 0;
+      }
+
+      a {
+        color: #766458;
+        transition: color 150ms ease-in-out;
+
+        &:hover {
+          color: #c5b9a3;
+        }
+      }
+    }
+  }
+}

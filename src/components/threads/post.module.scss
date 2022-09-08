@@ -1,0 +1,89 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: #766458;
+  width: 50vw;
+  border-radius: 5px;
+
+  .userColumn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    width: 20%;
+    border-right: 1px solid #392f23;
+
+    .avatar {
+      background-color: #766458;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 80px;
+      width: 80px;
+      border-radius: 50%;
+      overflow: hidden;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    .userInfo {
+      font-size: 16px;
+      font-weight: bold;
+      padding-top: 12px;
+
+      a {
+        color: #edecea;
+        transition: color 150ms ease-in-out;
+
+        &:hover {
+          color: #392f23;
+        }
+      }
+    }
+
+    .userStyle {
+      text-transform: uppercase;
+      font-size: 12px;
+    }
+  }
+
+  .contentColumn {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .postContent {
+      padding: 24px;
+      min-height: 100px;
+    }
+
+    .postFooter {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 12px;
+      padding: 12px;
+      color: #1b1610;
+      
+      .postControls {
+        display: flex;
+        flex-direction: row;
+        text-transform: uppercase;
+
+        a {
+          padding: 0 6px;
+          color: #1b1610;
+          transition: color 150ms ease-in-out;
+
+          &:hover {
+            color: #edecea;
+          }
+        }
+      }
+    }
+  }
+}

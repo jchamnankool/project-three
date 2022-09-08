@@ -1,0 +1,61 @@
+.createTopicPopup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+
+  .createTopicPopupInner {
+    position: relative;
+    padding: 32px;
+    width: 100%;
+    max-width: 600px;
+    background-color: #c5b9a3;
+    color: #000;
+    border-radius: 5px;
+
+    .closeButton {
+      background-color: #766458;
+      color: #edecea;
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 10%;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 12px;
+
+      label {
+        text-transform: uppercase;
+      }
+
+      input {
+        font-family: 'Playfair Display', serif;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px;
+        padding: 12px;
+        text-align: center;
+        width: 50%;
+      }
+
+      textarea {
+        font-family: 'Playfair Display', serif;
+        resize: none;
+        height: 100px;
+        padding: 12px;
+        border-radius: 5px;
+        width: 50%;
+        border: none;
+      }
+    }
+  }
+}
